@@ -8,8 +8,10 @@ function App() {
     <div>
       <h1>et eller andet</h1>
     <Routes>
-      <Route exact path="/" element={<AllPosts/>} />
-        <Route path="/onepost" element={<OnePost/>}/>
+    <Route element={<AllPosts/>} path="/" exact />
+        <Route element={<OnePost/>} path="/:slug" />
+      {/* <Route exact path="/" element={<AllPosts/>} />
+        <Route path="/onepost" element={<OnePost/>}/> */}
       
     </Routes>
     </div>
